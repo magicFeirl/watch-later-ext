@@ -60,7 +60,7 @@ onMounted(() => {
     if (a.watched !== b.watched) {
       return a.watched - b.watched
     } else {
-      return new Date(a.created) - new Date(b.created)
+      return new Date(b.created) - new Date(a.created)
     }
   })
 })
